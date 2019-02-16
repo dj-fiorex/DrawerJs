@@ -4,10 +4,6 @@ DrawerJS is a HTML5 widget that allows drawing and writing on HTML5 canvas eleme
 
 It is a customizable WYSIWYG HTML canvas editor for freehand drawing and creating sketches with simple shapes.
 
-# Why Fork?
-
-Because i need to add some custom functionality, like add image from url and add your logo
-
 ## What is DrawerJs? How can I use it?
 
 Here you will find more informations about features and a short faq: [DrawerJs](https://www.DrawerJs.com)

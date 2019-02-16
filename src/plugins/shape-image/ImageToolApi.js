@@ -6,7 +6,7 @@
      * @param {String}   imageUrl
      * @param {Function} callback callback on success
      */
-    DrawerApi.prototype.addImageFromUrl = function(imageUrl, options) {
+    DrawerApi.prototype.addImageFromUrlOLD = function(imageUrl, options) {
         this.drawer.api.checkIsActive();
         var tool = this.drawer.getPluginInstance('Image');
         tool.loadImage(imageUrl, options);

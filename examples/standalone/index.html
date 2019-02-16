@@ -125,6 +125,8 @@
             'Rectangle',
             'Circle',
             'Image',
+            'Logo',
+            'ImageFromUrl',
             'BackgroundImage',
             'Polygon',
             'ImageCrop',
@@ -171,7 +173,10 @@
 					scaleDownLargeImage: true,
 					maxImageSizeKb: 10240, //1MB
 					cropIsActive: true
-				},
+                },
+                Logo: {
+                    logoUrl: 'https://firebasestorage.googleapis.com/v0/b/g-action-90c64.appspot.com/o/uploads%2Fuser-images%2FPvIu1RVsZRRrO1mFS0B9Mhz91zu2%2FFoto_Intera%2Flogo.png?alt=media&token=c76f2c73-30fb-4f8f-aedc-64e3a0f984c5'
+                },
 				BackgroundImage: {
 				    scaleDownLargeImage: true,
 					maxImageSizeKb: 10240, //1MB
@@ -261,6 +266,14 @@
 
         $('#canvas-editor').append(window.drawer.getHtml());
         window.drawer.onInsert();
+
+        setTimeout(function() {
+            console.log('wei');
+            window.drawer.api.startEditing();
+            window.drawer.api.addImageFromUrl2('https://firebasestorage.googleapis.com/v0/b/g-action-90c64.appspot.com/o/uploads%2Fuser-images%2FPvIu1RVsZRRrO1mFS0B9Mhz91zu2%2FFoto_Mezzo_Busto%2Fpeople4events.jpg?alt=media&token=6a28441a-7eef-4480-95ee-2dc320786b76');
+        }, 5000);
+
+        
     });
 </script>
 </body>

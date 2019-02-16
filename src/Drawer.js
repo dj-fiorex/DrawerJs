@@ -571,6 +571,7 @@
    * @param {String} pluginName - name of plugin to load
    */
   Drawer.prototype.loadPlugin = function (pluginName) {
+    console.log('PluginName: ', pluginName);
     if (!pluginName || !pluginsNamespace[pluginName]) {
       this.error('Drawer: Load plugin error - ' + pluginName + '. No such plugin.');
       return;
